@@ -230,8 +230,8 @@ def main():
                     #break
                 #print("Invalid move!")
             #display(BOARD)
-            if isP_check:
-                PieceMoves = edit_moves(PieceMoves,choice,BOARD)
+            
+            PieceMoves = edit_moves(PieceMoves,choice,BOARD)
             if PieceMoves:
                 for i in PieceMoves:
                     tempy=(i.x*80)+40
