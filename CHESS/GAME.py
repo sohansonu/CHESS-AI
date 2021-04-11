@@ -188,8 +188,10 @@ def main():
             elif event.type == pygame.MOUSEBUTTONDOWN and n % 2 == 0:
                 mx,my=pygame.mouse.get_pos()
                 cx,cy=Board.gettileindex(mx,my)
-                PI=BOARD[cy][cx]
+                
                 try:
+                    PI=BOARD[cy][cx]
+             
                     if PI.color == 'W':
                         try:
                             piece=PI.name+'-'+PI.num
